@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Three reviewed Harness desktop captures with provenance and scope limits.">
+    <title>Harness evidence gallery</title>
+    <style>
+      :root { color-scheme: light dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #111318; color: #f2f0f8; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #111318; color: #f2f0f8; line-height: 1.55; }
+      a { color: #c7b7ff; text-underline-offset: .18em; }
+      a:focus-visible { outline: 3px solid #e4d8ff; outline-offset: 4px; border-radius: .25rem; }
+      .page { width: min(100% - 2rem, 1120px); margin-inline: auto; }
+      header { padding-block: clamp(2rem, 7vw, 5rem) 1.5rem; }
+      .eyebrow { color: #c7b7ff; font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      h1 { margin-block: .4rem; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.08; }
+      h2 { margin-top: 2.5rem; font-size: 1.5rem; }
+      .lede { max-width: 68ch; color: #d0ccda; font-size: 1.1rem; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 1.25rem; padding: 0; list-style: none; }
+      .card { overflow: hidden; border: 1px solid #383744; border-radius: 1rem; background: #1b1a22; }
+      .card img { display: block; width: 100%; height: auto; aspect-ratio: 1264 / 785; object-fit: contain; background: #0b0c10; }
+      .card-body { padding: 1rem 1.1rem 1.15rem; }
+      .card h3 { margin: 0 0 .35rem; font-size: 1.15rem; }
+      .card p { margin: 0; color: #d0ccda; }
+      .card a { display: inline-block; margin-top: .85rem; font-weight: 650; }
+      .panel { max-width: 82ch; padding: 1.1rem 1.25rem; border: 1px solid #51466d; border-radius: .85rem; background: #211e2a; }
+      .panel p:first-child { margin-top: 0; }
+      .panel p:last-child { margin-bottom: 0; }
+      dl { display: grid; grid-template-columns: minmax(9rem, .45fr) 1fr; gap: .5rem 1rem; max-width: 850px; }
+      dt { color: #d0ccda; }
+      dd { margin: 0; overflow-wrap: anywhere; }
+      footer { margin-top: 3rem; padding-block: 1.5rem 3rem; border-top: 1px solid #383744; color: #c3bfce; }
+      @media (prefers-color-scheme: light) {
+        :root, body { background: #f7f5fb; color: #211b2b; }
+        .eyebrow, a { color: #5d3b99; }
+        .lede, .card p, dt { color: #4f4859; }
+        .card { border-color: #d9d3e3; background: #fff; }
+        .card img { background: #e8e5ed; }
+        .panel { border-color: #cfc1e7; background: #f0eafb; }
+        footer { border-color: #d9d3e3; color: #514b5b; }
+        a:focus-visible { outline-color: #5d3b99; }
+      }
+      @media (max-width: 600px) {
+        dl { grid-template-columns: 1fr; gap: .1rem; }
+        dd { margin-bottom: .65rem; }
+      }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <p class="eyebrow">Reviewed visual evidence</p>
+        <h1>Harness evidence gallery</h1>
+        <p class="lede">Three original captures from a packaged Harness build, recorded with local fixture data. Each image is paired with its exact screen state and downloadable source file.</p>
+      </header>
+
+      <section aria-labelledby="captures-heading">
+        <h2 id="captures-heading">Captures</h2>
+        <ul class="grid">
+          <li class="card">
+            <img src="images/conversation-dark.png" width="1264" height="785" alt="Harness conversation showing a completed local fixture response, formatted code, and a notice that no provider account was contacted." loading="lazy">
+            <div class="card-body"><h3>Conversation · completed local fixture</h3><p>Dark theme · 1264 × 785 · scale 1</p><a href="images/conversation-dark.png" download>Open or download the original PNG</a></div>
+          </li>
+          <li class="card">
+            <img src="images/settings-dark.png" width="1264" height="785" alt="Harness settings showing appearance and language preferences alongside model defaults." loading="lazy">
+            <div class="card-body"><h3>Settings · saved preferences</h3><p>Dark theme · 1264 × 785 · scale 1</p><a href="images/settings-dark.png" download>Open or download the original PNG</a></div>
+          </li>
+          <li class="card">
+            <img src="images/search-dark.png" width="1264" height="785" alt="Harness regular expression builder open over settings, with expression controls and sample text." loading="lazy">
+            <div class="card-body"><h3>Search · regular expression builder open</h3><p>Dark theme · 1264 × 785 · scale 1</p><a href="images/search-dark.png" download>Open or download the original PNG</a></div>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="provenance-heading">
+        <h2 id="provenance-heading">Provenance</h2>
+        <div class="panel">
+          <p>All three PNG files are unchanged from the reviewed capture inventory. The images show local fixture content only; no provider account was contacted.</p>
+          <dl>
+            <dt>Capture source commit</dt><dd><code>c028c39eb07c55d84dcac937d438a05073d42c46</code></dd>
+            <dt>Packaged executable SHA-256</dt><dd><code>efd01ac3a348b9fb17f992a1627a0f3ec9646b60d100b73fbabf8693901d0b39</code></dd>
+            <dt>Capture time</dt><dd>2026-09-30, 18:55 UTC; individual timestamps are in the manifest.</dd>
+            <dt>Manifest</dt><dd><a href="evidence/inventory.json">Download the reviewed JSON inventory</a></dd>
+          </dl>
+        </div>
+      </section>
+
+      <section aria-labelledby="limits-heading">
+        <h2 id="limits-heading">Scope and limitations</h2>
+        <p>This evidence covers three displayed states only. It does not establish live provider compatibility, installer or update execution, exhaustive accessibility, or completion of the broader product roadmap.</p>
+        <p>This is a static evidence gallery, not a complete application surface. Full page conformance is not claimed. See the <a href="docs/evidence-gallery/README.md">evidence record</a> for the scope and publication limitations.</p>
+        <p>The packaged runtime came from commit <code>c028c39eb07c55d84dcac937d438a05073d42c46</code>. Later documentation commits did not change that packaged runtime.</p>
+      </section>
+
+      <footer>
+        <p>Source application: <a href="https://github.com/Ding-Ding-Projects/harness">Ding-Ding-Projects/harness</a>. This repository contains reviewed evidence, not application source.</p>
+        <p><a href="https://github.com/Ding-Ding-Projects/harness-gallery">Browse the evidence repository</a> · <a href="docs/evidence-gallery/README.md">Read the evidence record</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
