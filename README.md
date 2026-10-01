@@ -2,6 +2,8 @@
 
 This public gallery contains three reviewed captures from the Harness desktop application. The images show local fixture data only. They do not establish live provider compatibility, installer execution, exhaustive accessibility compliance, or completion of the broader product roadmap.
 
+Published gallery: [https://ding-ding-projects.github.io/harness-gallery/](https://ding-ding-projects.github.io/harness-gallery/). The public page, inventory, and three original PNG files returned HTTP 200 in anonymous requests. Downloaded PNG SHA-256 hashes match the manifest.
+
 ## Captures
 
 | Screen | State | Capture |
@@ -20,6 +22,6 @@ The source application is tracked separately at [Ding-Ding-Projects/harness](htt
 
 ## Scope and limitations
 
-This is a static evidence gallery. It does not implement the broader application's language, personalization, search, export, notification, appearance, or live status controls. The shared Status Hub could not be reached from the publishing session. The available Material Designer creation and export flow was not exposed in that session, so the gallery uses a small semantic static layout. These limits are stated here rather than implying full application or design-system conformance.
+This is a static evidence gallery. It does not implement the broader application's language, personalization, search, export, notification, appearance, or live status controls. Status Hub write authorization was not configured for the publishing session. The available Material Designer creation and export flow was not exposed in that session, so the gallery uses a small semantic static layout. These limits are stated here rather than implying full application or design-system conformance.
 
 The captures document the packaged runtime built from source commit `c028c39eb07c55d84dcac937d438a05073d42c46`. Later documentation commits did not change that packaged runtime.
